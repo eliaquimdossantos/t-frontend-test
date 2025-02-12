@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "@/styles/globals.css";
+import "@/styles/custom-bootstrap.scss"; 
+
+import { Container } from "react-bootstrap";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -12,8 +15,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="pt-BR">
+      <body>
+        <Container fluid className="p-4 bg-light">
+          {children}
+        </Container>
+      </body>
     </html>
   );
 }

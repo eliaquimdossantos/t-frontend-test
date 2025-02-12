@@ -1,0 +1,24 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
+// Personalização do ajuste de contraste
+$min-contrast-ratio: 3.5;
+
+// Personalização de cores do tema padrão
+$primary: #0391b1;
+$secondary: #eeeeee;
+$light: #fafafa;
+
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark
+);
+
+@import "bootstrap/scss/bootstrap";
